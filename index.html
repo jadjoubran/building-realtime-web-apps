@@ -80,7 +80,10 @@
 <script>
 	$(document).ready(function(){
 		$('.modal-trigger').leanModal({
-			in_duration: 150
+			in_duration: 150,
+			complete: function(){
+				window.location.reload();
+			}
 		});
 	});
 </script>
