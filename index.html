@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<style>
+		.text-shadow{
+			text-shadow: 1px 1px 1px rgba(0,0,0,0.6),
+			1px 1px 1px rgba(0,0,0,0.6),
+			1px 1px 1px rgba(0,0,0,0.6);
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="indigo darken-1" role="navigation">
+		<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Workshop</a>
+			<ul class="right">
+				<li>Step 0</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="section no-pad-bot" id="index-banner">
+		<div class="container">
+			<h1 class="header center">Building real time web apps</h1>
+			<div class="row">
+				<div class="col offset-s2 offset-m4 s8 m4">
+					<div class="card medium">
+						<div class="card-image">
+							<img src="img/jad.jpg">
+							<span class="card-title text-shadow">Jad Joubran</span>
+						</div>
+						<div class="card-content center">
+							<p>
+								Cofounder &amp; CTO of <a href="https://www.etobb.com/" target="_blank">eTobb.com</a><br>
+								Writer and Expert Mentor on <a href="https://www.codementor.io/jadjoubran" target="_blank">CodeMentor.io</a>
+								<br>
+								<br>
+								<a class="github-button" href="https://github.com/jadjoubran" aria-label="Follow @jadjoubran on GitHub">Follow @jadjoubran</a>
+								<br>
+								<a href="https://twitter.com/JoubranJad" class="twitter-follow-button" data-show-count="false">Follow @JoubranJad</a>
+								<br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row center">
+				<a class="modal-trigger waves-effect waves-light btn-large" href="#modal-get-started">Get started</a>
+			</div>
+			<br>
+			<br>
+		</div>
+	</div>
+
+	<div id="modal-get-started" class="modal">
+		<div class="modal-content">
+			<h4>Interactive Tutorial</h4>
+			<p class="flow-text">
+				This tutorial contains <strong>7 steps</strong>. Each step being in a different <strong>branch</strong>.<br>
+				We are currently in step 0 on branch <strong>Master</strong>.<br>
+				Let's start the tutorial by switching to <strong>step1</strong> and then press Done
+				<blockquote class="flow-text">
+					git checkout -- .<br>
+					git checkout step1
+				</blockquote>
+			</p>
+		</p>
+	</div>
+	<div class="modal-footer">
+		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Done</a>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.modal-trigger').leanModal({
+			in_duration: 150
+		});
+	});
+</script>
+
+<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</body>
+</html>
