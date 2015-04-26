@@ -12,15 +12,18 @@
 		.with-code{
 			padding-bottom: 0 !important;
 		}
+		.chat-name{
+			margin-left: 15px;
+		}
 	</style>
-	<title>Step 4</title>
+	<title>Step 5</title>
 </head>
 
 <body>
 	<nav class="indigo darken-1" role="navigation">
 		<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Workshop</a>
 			<ul class="right">
-				<li>Step 4</li>
+				<li>Step 5</li>
 			</ul>
 		</div>
 	</nav>
@@ -29,43 +32,15 @@
 	<div class="section no-pad-bot" id="index-banner">
 		<div class="container">
 			<div class="row">
-				<div class="collection-header"><h4>Authenticating Users</h4></div>
+				<div class="collection-header"><h4>Who's online?</h4></div>
 				<br>
-				<ul class="collapsible" data-collapsible="accordion">
-					<li>
-						<div class="collapsible-header active"><i class="mdi-av-my-library-books"></i>Open the Pusher Documentation</div>
-						<div class="collapsible-body">
-							<p>
-								Open <a href="https://pusher.com/docs/authenticating_users" target="_blank">pusher.com/docs/authenticating_users</a>
-							</p>
+				<div class="col s12 m8 offset-m2 l6 offset-l3">
+					<div class="card-panel grey lighten-5 z-depth-1">
+						<div class="valign-wrapper">
+							<img src="http://placehold.it/200x200" alt="" class="circle" width="40" height="40">
+							<span class="chat-name black-text">Jad Joubran</span>
 						</div>
-					</li>
-					<li>
-						<div class="collapsible-header"><i class="mdi-file-file-download"></i>Client side Authentication endpoint</div>
-						<div class="collapsible-body">
-							<p>Using the docs, open your <strong>js/app.js</strong> and fix the existing code to use the authentication under <strong>auth.php</strong>.<br>
-								Be careful with paths!</p>
-							</div>
-						</li>
-						<li>
-							<div class="collapsible-header"><i class="mdi-hardware-security"></i>Handle authentication</div>
-							<div class="collapsible-body">
-								<p>
-									Open <strong>auth.php</strong> and authenticate the request.<br>
-									For the sake of this tutorial, we will assume that the user is logged in and each attendee will return his own information as if he was logged in.
-								</p>
-							</div>
-						</li>
-						<li>
-							<div class="collapsible-header"><i class="mdi-navigation-check"></i>Testing Client Side Integration</div>
-							<div class="collapsible-body">
-								<p>
-									Open Chrome Developer Tools's <strong>Console</strong> then right click and enable <em>Log XMLHTTPRequests</em>.
-									Then <a href="#" onclick="window.location.reload();">Refresh</a> the page. and make sure that the authentication process succeeded.<br>
-								</p>
-							</div>
-						</li>
-					</ul>
+					</div>
 				</div>
 				<div class="row center">
 					<a class="modal-trigger waves-effect waves-light btn-large" href="#modal-get-started">Next step</a>
@@ -77,11 +52,11 @@
 
 		<div id="modal-get-started" class="modal">
 			<div class="modal-content">
-				<h4>Proceed to step 5</h4>
+				<h4>Proceed to step 6</h4>
 				<p class="flow-text">
 					<blockquote class="flow-text">
 						git checkout -- .<br>
-						git checkout step5
+						git checkout step6
 					</blockquote>
 				</p>
 			</p>
