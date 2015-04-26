@@ -2,6 +2,11 @@
 var pusher = new Pusher('b01869d9766c85e66a1b', {authEndpoint: 'auth.php'});
 
 var channel = pusher.subscribe('presence-chat-room-dpc');
-channel.bind('chat_message', function(data) {
-	alert(data.message);
-});
+
+
+
+
+
+
+
+/*You can use the #whos-online and #whos-online in your logic implementation*/

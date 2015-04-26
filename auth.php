@@ -12,9 +12,8 @@ $pusher 	= new Pusher( $app_key, $app_secret, $app_id );
 /*
 Here's where you check if the user is logged in and then allow him through the channel.
 For the sake of this tutorial, each attendee will return his own information as if they were logged in.
-Don't forget to change your name and email. Choose your real email, it'll automatically pull your Gravatar (if it's available)
 */
-echo $pusher->presence_auth($_POST['channel_name'], $_POST['socket_id'], rand(10000,99999), array(
-	'full_name' 		=> 'Your Name Here',
+echo $pusher->presence_auth($_POST['channel_name'], $_POST['socket_id'], 154, array(
+	'full_name' 		=> 'John Doe',
 	'email'				=> 'test@domain.com'
 	));

@@ -15,6 +15,17 @@
 		.chat-name{
 			margin-left: 15px;
 		}
+		.list{
+			padding-top: 10px;
+			padding-left: 40px;
+			padding-bottom: 30px;
+		}
+		.list li{
+			list-style: disc;
+		}
+		span.badge.new:after{
+			content: "";
+		}
 	</style>
 	<title>Step 5</title>
 </head>
@@ -34,7 +45,55 @@
 			<div class="row">
 				<div class="collection-header"><h4>Who's online?</h4></div>
 				<br>
-				
+				<ul class="collection">
+					<div class="collection-item">Number of users online<span class="new badge" id="whos-online-count">0</span></div>
+				</ul>
+				<div id="whos-online">No one yet</div>
+				<br>
+				<ul class="collapsible" data-collapsible="accordion">
+					<li>
+						<div class="collapsible-header active"><i class="mdi-av-my-library-books"></i>Open the Pusher Documentation</div>
+						<div class="collapsible-body">
+							<p>
+								Open the <a href="https://pusher.com/docs/client_api_guide/client_presence_channels" target="_blank">Pusher Presence Channels Documentation</a>
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="mdi-file-file-download"></i>Implement Presence Channel Events</div>
+						<div class="collapsible-body">
+							<p class="with-code">
+								Implement the following events in your <strong>js/app.js</strong>:
+							</p>
+							<ul class="list">
+								<li>pusher:subscription_succeeded</li>
+								<li>pusher:member_added</li>
+								<li>pusher:member_removed</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="mdi-hardware-security"></i>Implement Front End Logic</div>
+						<div class="collapsible-body">
+							<p class="with-code">
+								Implement the following functions in your <strong>js/app.js</strong>:
+							</p>
+							<ul class="list">
+								<li>add_member(id, info)</li>
+								<li>remove_member(id, info)</li>
+								<li>update_members_count(count)</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="mdi-navigation-check"></i>Testing Client Side Integration</div>
+						<div class="collapsible-body">
+							<p>
+								<a href="#" onclick="window.location.reload();">Refresh</a> the page and see who's online!
+							</p>
+						</div>
+					</li>
+				</ul>
 				<div class="row center">
 					<a class="modal-trigger waves-effect waves-light btn-large" href="#modal-get-started">Next step</a>
 				</div>
