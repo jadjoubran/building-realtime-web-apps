@@ -56,6 +56,40 @@
 							<blockquote class="flow-text">require("vendor/autoload.php");</blockquote>
 						</div>
 					</li>
+					<li>
+						<div class="collapsible-header"><i class="mdi-content-add-circle"></i>Pusher Constructor</div>
+						<div class="collapsible-body">
+							<p>
+								Open <a href="https://github.com/pusher/pusher-http-php" target="_blank">pusher/pusher-http-php</a> on github and use the code to create a new <strong>Pusher</strong> instance in your <strong>server.php</strong>.<br>
+								Don't forget to use your credentials which are provided in pusher's App Keys page.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="mdi-navigation-check"></i>Testing Client Side Integration</div>
+						<div class="collapsible-body">
+							<p>
+								Open the <strong>App Keys</strong> page and then go to <strong>server.php</strong> and trigger an the following using the Pusher constructor you just created:
+							</p>
+							<table class="bordered" width="100px" style="margin-left: 20px;">
+								<tr>
+									<th>Channel</th>
+									<td>test_channel</td>
+								</tr>
+								<tr>
+									<th>Event</th>
+									<td>my_event</td>
+								</tr>
+								<tr>
+									<th>Data</th>
+									<td>{"message": "Hello World"}</td>
+								</tr>
+							</table>
+							<p>
+								Open your <strong>server.php</strong> page and expect an Alert from the App Keys page!
+							</p>
+						</div>
+					</li>
 				</ul>
 				<br>
 			</div>
