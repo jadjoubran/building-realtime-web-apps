@@ -9,6 +9,9 @@
 			1px 1px 1px rgba(0,0,0,0.6),
 			1px 1px 1px rgba(0,0,0,0.6);
 		}
+		.with-code{
+			padding-bottom: 0 !important;
+		}
 	</style>
 	<title>Step 3</title>
 </head>
@@ -30,7 +33,7 @@
 				<div class="collection-header"><h4>Backend setup</h4></div>
 				<ul class="collapsible" data-collapsible="accordion">
 					<li>
-						<div class="collapsible-header active"><i class="mdi-action-account-circle"></i>Open the Pusher Documentation</div>
+						<div class="collapsible-header active"><i class="mdi-av-my-library-books"></i>Open the Pusher Documentation</div>
 						<div class="collapsible-body">
 							<p>
 								Open <a href="https://pusher.com/docs" target="_blank">pusher.com/docs</a> and locate the API libraries and then scroll through to find the PHP library.<br>
@@ -38,19 +41,19 @@
 						</div>
 					</li>
 					<li>
-						<div class="collapsible-header"><i class="mdi-social-whatshot"></i>Composer install it</div>
+						<div class="collapsible-header"><i class="mdi-file-file-download"></i>Composer install it</div>
 						<div class="collapsible-body">
+							<p class="with-code">From the CLI: </p>
 							<blockquote class="flow-text">composer install pusher-php-server</blockquote>
 						</div>
 					</li>
 					<li>
-						<div class="collapsible-header"><i class="mdi-hardware-desktop-windows"></i>Pusher Javascript SDK</div>
+						<div class="collapsible-header"><i class="mdi-action-extension"></i>Require autoloader</div>
 						<div class="collapsible-body">
-							<p>
-								Go back to <strong>App Keys</strong> and locate the link to <strong>pusher.min.js</strong>.<br>
-								For the sake of this tutorial we need to download it to our js folder so we can reference it locally.<br>
-								Add a script tag that references the local <strong>js/pusher.min.js</strong> that you just downloaded
+							<p class="with-code">
+								Open <strong>server.php</strong> and require the composer autoloader:
 							</p>
+							<blockquote class="flow-text">require("vendor/autoload.php");</blockquote>
 						</div>
 					</li>
 				</ul>
