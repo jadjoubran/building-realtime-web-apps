@@ -40,7 +40,7 @@
 						</div>
 					</li>
 					<li>
-						<div class="collapsible-header"><i class="mdi-social-whatshot"></i>Enable Client Events</div>
+						<div class="collapsible-header"><i class="mdi-action-settings"></i>Enable Client Events</div>
 						<div class="collapsible-body">
 							<p>
 								Go to Settings And <strong>Enable Client Events</strong> and then save.
@@ -52,8 +52,33 @@
 						<div class="collapsible-body">
 							<p>
 								Go back to <strong>App Keys</strong> and locate the link to <strong>pusher.min.js</strong>.<br>
-								For the sake of this tutorial we need to download it to our js folder so we can reference it locally.<br>
-								Add a script tag that references the local <strong>js/pusher.min.js</strong> that you just downloaded
+								Add a script tag that references Pusher's Javascript SDK.<br>
+								Also include the second script tag that appears right under the SDK so we can test the client side integration.
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="mdi-navigation-check"></i>Testing Client Side Integration</div>
+						<div class="collapsible-body">
+							<p>
+								Open the <strong>Debug Console</strong> and write the following in <strong>Create new Event</strong> section:<br>
+							</p>
+							<table class="bordered" width="100px" style="margin-left: 20px;">
+								<tr>
+									<th>Channel</th>
+									<td>test_channel</td>
+								</tr>
+								<tr>
+									<th>Event</th>
+									<td>my_event</td>
+								</tr>
+								<tr>
+									<th>Data</th>
+									<td>{"name": "Your name here"}</td>
+								</tr>
+							</table>
+							<p>
+							Press <strong>Send Event</strong> and expect an Alert!
 							</p>
 						</div>
 					</li>
