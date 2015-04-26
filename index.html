@@ -10,14 +10,14 @@
 			1px 1px 1px rgba(0,0,0,0.6);
 		}
 	</style>
-	<title>Step 2</title>
+	<title>Step 3</title>
 </head>
 
 <body>
 	<nav class="indigo darken-1" role="navigation">
 		<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Workshop</a>
 			<ul class="right">
-				<li>Step 2</li>
+				<li>Step 3</li>
 			</ul>
 		</div>
 	</nav>
@@ -27,23 +27,20 @@
 		<div class="container">
 			<div class="row">
 				<br>
+				<div class="collection-header"><h4>Backend setup</h4></div>
 				<ul class="collapsible" data-collapsible="accordion">
 					<li>
-						<div class="collapsible-header active"><i class="mdi-action-account-circle"></i>Create an account on Pusher</div>
+						<div class="collapsible-header active"><i class="mdi-action-account-circle"></i>Open the Pusher Documentation</div>
 						<div class="collapsible-body">
 							<p>
-								Open <a href="https://pusher.com/" target="_blank">pusher.com</a> and register using this Promo Code: XXXX-YYYY-ZZZZ<br>
-								This Promo Code exclusive to today's attendees will get you 120$ worth of credits for free.<br>
-								That's 6 months of the Startup plan.
+								Open <a href="https://pusher.com/docs" target="_blank">pusher.com/docs</a> and locate the API libraries and then scroll through to find the PHP library.<br>
 							</p>
 						</div>
 					</li>
 					<li>
-						<div class="collapsible-header"><i class="mdi-social-whatshot"></i>Enable Client Events</div>
+						<div class="collapsible-header"><i class="mdi-social-whatshot"></i>Composer install it</div>
 						<div class="collapsible-body">
-							<p>
-								Go to Settings And <strong>Enable Client Events</strong> and then save.
-							</p>
+							<blockquote class="flow-text">composer install pusher-php-server</blockquote>
 						</div>
 					</li>
 					<li>
@@ -69,11 +66,11 @@
 
 	<div id="modal-get-started" class="modal">
 		<div class="modal-content">
-			<h4>Proceed to step 3</h4>
+			<h4>Proceed to step 4</h4>
 			<p class="flow-text">
 				<blockquote class="flow-text">
 					git checkout -- .<br>
-					git checkout step3
+					git checkout step4
 				</blockquote>
 			</p>
 		</p>
@@ -84,8 +81,9 @@
 </div>
 
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/pusher.min.js"></script>
 <script>
 	$(document).ready(function(){
 		$('.modal-trigger').leanModal({
