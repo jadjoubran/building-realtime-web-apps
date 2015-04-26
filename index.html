@@ -31,47 +31,81 @@
 			<div class="row">
 				<div class="collection-header"><h4>Authenticating Users</h4></div>
 				<br>
+				<ul class="collapsible" data-collapsible="accordion">
+					<li>
+						<div class="collapsible-header active"><i class="mdi-av-my-library-books"></i>Open the Pusher Documentation</div>
+						<div class="collapsible-body">
+							<p>
+								Open <a href="https://pusher.com/docs/authenticating_users" target="_blank">pusher.com/docs/authenticating_users</a>
+							</p>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="mdi-file-file-download"></i>Client side Authentication endpoint</div>
+						<div class="collapsible-body">
+							<p>Using the docs, open your <strong>js/app.js</strong> and fix the existing code to use the authentication under <strong>auth.php</strong>.<br>
+								Be careful with paths!</p>
+							</div>
+						</li>
+						<li>
+							<div class="collapsible-header"><i class="mdi-hardware-security"></i>Handle authentication</div>
+							<div class="collapsible-body">
+								<p>
+									Open <strong>auth.php</strong> and authenticate the request.<br>
+									For the sake of this tutorial, we will assume that the user is logged in and each attendee will return his own information as if he was logged in.
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="collapsible-header"><i class="mdi-navigation-check"></i>Testing Client Side Integration</div>
+							<div class="collapsible-body">
+								<p>
+									Open Chrome Developer Tools's <strong>Console</strong> then right click and enable <em>Log XMLHTTPRequests</em>.
+									Then <a href="#" onclick="window.location.reload();">Refresh</a> the page. and make sure that the authentication process succeeded.<br>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="row center">
+					<a class="modal-trigger waves-effect waves-light btn-large" href="#modal-get-started">Next step</a>
+				</div>
+				<br>
+				<br>
+			</div>
+		</div>
 
-			</div>
-			<div class="row center">
-				<a class="modal-trigger waves-effect waves-light btn-large" href="#modal-get-started">Next step</a>
-			</div>
-			<br>
-			<br>
+		<div id="modal-get-started" class="modal">
+			<div class="modal-content">
+				<h4>Proceed to step 5</h4>
+				<p class="flow-text">
+					<blockquote class="flow-text">
+						git checkout -- .<br>
+						git checkout step5
+					</blockquote>
+				</p>
+			</p>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Done</a>
 		</div>
 	</div>
 
-	<div id="modal-get-started" class="modal">
-		<div class="modal-content">
-			<h4>Proceed to step 5</h4>
-			<p class="flow-text">
-				<blockquote class="flow-text">
-					git checkout -- .<br>
-					git checkout step5
-				</blockquote>
-			</p>
-		</p>
-	</div>
-	<div class="modal-footer">
-		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Done</a>
-	</div>
-</div>
 
-
-<script src="js/jquery.min.js"></script>
-<script src="js/materialize.min.js"></script>
-<script src="js/pusher.min.js"></script>
-<script src="js/app.js"></script>
-<script>
-	$(document).ready(function(){
-		$('.modal-trigger').leanModal({
-			in_duration: 150,
-			complete: function(){
-				window.location.reload();
-			}
+	<script src="js/jquery.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/pusher.min.js"></script>
+	<script src="js/app.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.modal-trigger').leanModal({
+				in_duration: 150,
+				complete: function(){
+					window.location.reload();
+				}
+			});
 		});
-	});
-</script>
+	</script>
 
 </body>
 </html>
