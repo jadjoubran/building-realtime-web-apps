@@ -41,7 +41,7 @@ function add_member( id, info ){
 	var html = '';
 	html += '<li class="collection-item"><div class="valign-wrapper">';
 	html += '<img src="' + gravatar + '" class="circle" width="40" height="40">';
-	html += '<span class="chat-name black-text">Jad Joubran</span>';
+	html += '<span class="chat-name black-text">' + info.full_name + '</span>';
 	html += '</div></li>';
 	$("#whos-online").append( html );
 }
