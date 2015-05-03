@@ -37,7 +37,7 @@ function add_member( id, info ){
 		return false;
 	}
 	$("#chat-loading").remove();
-	var gravatar = get_gravatar( info.email, 40 )
+	var gravatar = get_gravatar( info.email, 40 );
 	var html = '';
 	html += '<li class="collection-item"><div class="valign-wrapper">';
 	html += '<img src="' + gravatar + '" class="circle" width="40" height="40">';
