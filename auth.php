@@ -16,4 +16,4 @@ For the sake of this tutorial, each attendee will return his own information as 
 
 require("me.php");
 
-echo $pusher->presence_auth($_POST['channel_name'], $_POST['socket_id'], 154, $user_array);
+echo $pusher->presence_auth($_POST['channel_name'], $_POST['socket_id'], rand(10000,99999), $user_array);
