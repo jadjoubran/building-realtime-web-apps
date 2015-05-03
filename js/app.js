@@ -39,7 +39,7 @@ function add_member( id, info ){
 	$("#chat-loading").remove();
 	var gravatar = get_gravatar( info.email, 40 )
 	var html = '';
-	html += '<li class="collection-item"><div class="valign-wrapper">';
+	html += '<li id="user-' + id + '" class="collection-item"><div class="valign-wrapper">';
 	html += '<img src="' + gravatar + '" class="circle" width="40" height="40">';
 	html += '<span class="chat-name black-text">' + info.full_name + '</span>';
 	html += '</div></li>';
@@ -47,5 +47,5 @@ function add_member( id, info ){
 }
 
 function remove_member( id, info ){
-
+	$("#user-" + id).remove();
 }
