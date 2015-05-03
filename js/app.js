@@ -6,7 +6,7 @@ function get_gravatar(email, size) {
 }
 
 /* Do not change this key, even though it doesn't belong to your account - You'll see why at the end*/
-var pusher = new Pusher('b01869d9766c85e66a1b', {authEndpoint: 'auth.php'});
+var pusher = new Pusher('c0f9e245836dad65984b', {authEndpoint: 'auth.php'});
 
 var channel = pusher.subscribe('presence-chat-room-dpc');
 
@@ -50,9 +50,46 @@ function remove_member( id, info ){
 	$("#user-" + id).remove();
 }
 
+/*Get user's properties (for the sake of this tutorial only)*/
+$.getJSON( "me.php?json=1", function( data ) {
+	window.me = data;
+});
+
+function submit_new_message(){
+	var message = $("#new-message").val();
+	if ( !message ){
+		return false;
+	}
+
+	var data = {
+		message: message,
+		email: me.email,
+		full_name: me.full_name
+	};
+
+	channel.trigger('client-message', data);
+	$("#new-message").val('');
+	new_message( data );
+}
+
+function new_message( data ){
+	$("#no-messages-yet").remove();
+	var gravatar = get_gravatar( data.email, 40 );
+	var html = '';
+	html += '<div>';
+	html += '<img src="' + gravatar + '" class="circle" width="40" height="40">';
+	html += '<span class="chat-name black-text"><strong>' + data.full_name + ':&nbsp;</strong></span>';
+	html += '<span class="chat-message black-text">' + data.message + '</span>';
+	html += '</div><div class="clearfix"></div><br>';
+	$("#chat-room").append(html);
+}
+
+
+channel.bind('client-message', new_message);
 
 $(document).ready(function(){
 
+	$("#submit-new-message").on('click', submit_new_message);
 	
 
 });
