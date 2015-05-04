@@ -4,10 +4,24 @@
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 	<style>
-		.text-shadow{
-			text-shadow: 1px 1px 1px rgba(0,0,0,0.6),
-			1px 1px 1px rgba(0,0,0,0.6),
-			1px 1px 1px rgba(0,0,0,0.6);
+		.my-profile{
+			-webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+			-moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+			box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+			max-width: 600px;
+			min-width: 505px;
+			height: 200px;
+			margin: 0 auto 0 auto;
+		}
+		.my-profile-text{
+			margin-left: 20px;
+		}
+		.tutorial-title{
+			margin-bottom: 15px;
+		}
+		.btn-large{
+			padding-left: 60px;
+			padding-right: 60px;
 		}
 	</style>
 	<title>Building realtime web apps</title>
@@ -25,30 +39,33 @@
 
 	<div class="section no-pad-bot" id="index-banner">
 		<div class="container">
-			<h1 class="header center">Building real time web apps</h1>
+			<h1 class="header center tutorial-title">Building real time web apps</h1>
+			<div class="flow-text center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+			<br>
+			<br>
 			<div class="row">
-				<div class="col offset-s2 offset-m4 s8 m4">
-					<div class="card medium">
-						<div class="card-image">
-							<img src="img/jad.jpg">
-							<span class="card-title text-shadow">Jad Joubran</span>
-						</div>
-						<div class="card-content center">
-							<p>
-								Cofounder &amp; CTO of <a href="https://www.etobb.com/" target="_blank">eTobb.com</a><br>
-								Writer and Expert Mentor on <a href="https://www.codementor.io/jadjoubran" target="_blank">CodeMentor.io</a>
-								<br>
-								<br>
-								<a class="github-button" href="https://github.com/jadjoubran" aria-label="Follow @jadjoubran on GitHub">Follow @jadjoubran</a>
-								<br>
-								<a href="https://twitter.com/JoubranJad" class="twitter-follow-button" data-show-count="false">Follow @JoubranJad</a>
-								<br>
-							</p>
-						</div>
+				<div class="my-profile">
+					<div class="left">
+						<img src="img/jad.jpg" width="200" height="200">
 					</div>
+					<div class="left my-profile-text">
+						<h5>Jad Joubran</h5>
+						<p>
+							Cofounder &amp; CTO of <a href="https://www.etobb.com/" target="_blank">eTobb.com</a><br>
+							Writer and Expert Mentor on <a href="https://www.codementor.io/jadjoubran" target="_blank">CodeMentor.io</a>
+							<br>
+							<br>
+							<a class="github-button" href="https://github.com/jadjoubran" aria-label="Follow @jadjoubran on GitHub">Follow @jadjoubran</a>
+							<br>
+							<a href="https://twitter.com/JoubranJad" class="twitter-follow-button" data-show-count="false">Follow @JoubranJad</a>
+							<br>
+						</p>
+					</div>
+					<div class="clearfix"></div>
 				</div>
 			</div>
 			<div class="row center">
+				<br>
 				<a class="modal-trigger waves-effect waves-light btn-large light-blue accent-4" href="#modal-get-started">Get started</a>
 			</div>
 			<br>
