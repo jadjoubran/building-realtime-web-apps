@@ -23,8 +23,19 @@
 		.list li{
 			list-style: disc;
 		}
+		.collapsible-header{
+			font-weight: bold;
+		}
 		span.badge.new:after{
 			content: "";
+		}
+		span.badge.new{
+			padding-left: 5px;
+			padding-right: 5px;
+			min-width: 24px;
+		}
+		div.hr{
+			border-top: 1px solid #eeeeee;
 		}
 		#whos-online-count{
 			margin-top: 35px;
@@ -34,11 +45,9 @@
 </head>
 
 <body>
-	<nav class="indigo darken-1" role="navigation">
-		<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Workshop</a>
-			<ul class="right">
-				<li>Step 6</li>
-			</ul>
+	<nav class="light-blue darken-4" role="navigation">
+		<div class="nav-wrapper container">
+			<a id="logo-container" href="#" class="brand-logo">Workshop</a>
 		</div>
 	</nav>
 
@@ -47,15 +56,15 @@
 		<div class="container">
 			<div class="row">
 				
-				<ul class="collection with-header"><span class="new badge" id="whos-online-count">0</span>
+				<ul class="collection with-header"><span class="new badge light-blue accent-4" id="whos-online-count">0</span>
 					<li class="collection-header"><h4>Who's online?</h4></li>
 					<span id="whos-online">
 						<li class="collection-item" id="chat-loading"><div>Loading..</div></li>
 					</span>
 				</ul>
 				<br>
-				<div class="row center">
-					<a class="modal-trigger waves-effect waves-light btn-large" href="#modal-get-started">Next step</a>
+				<div class="center">
+					<a class="modal-trigger waves-effect waves-light btn-large light-blue accent-4 right" href="#modal-get-started">Next step</a>
 				</div>
 				<br>
 				<br>
