@@ -38,9 +38,6 @@
 		div.hr{
 			border-top: 1px solid #eeeeee;
 		}
-		#whos-online-count{
-			margin-top: 35px;
-		}
 		.character-counter{
 			float: left !important;
 		}
@@ -53,6 +50,14 @@
 		h4{
 			margin-top: 2px;
 			margin-bottom: 30px;
+		}
+		.collection .collection-item{
+			background-color: transparent;
+		}
+		.chat-box{
+			height: 250px;
+			overflow-y: auto;
+			padding: 20px;
 		}
 	</style>
 	<title>Step 7</title>
@@ -70,30 +75,32 @@
 		<div class="container">
 			<div class="row">
 				<div class="col s12 m12 l8">
+					<div id="step" class="grey-text">Step 8</div>
+					<div class="collection-header"><h4>Chat room</h4></div>
+
 					<ul class="collection with-header">
-						<li id="step" class="grey-text">Step 7</li>
-						<li class="collection-header"><h4>Chat room</h4></li>
-						<li class="collection-item">
-							<div id="chat-room">No messages yet</div>
-						</li>
 						<li class="collection-item">
 							<div class="input-field">
-								<input type="text" id="new-message" class="validate" maxlength="120" length="120">
+								<input type="text" id="new-message" autocomplete="off" class="validate" maxlength="120" length="120">
 								<label for="new-message">Enter your message here</label>
 							</div>
 							<a id="submit-new-message" class="waves-effect waves-light btn right blue">Send<i class="mdi-content-send right"></i></a>
 							<br>
 							<br>
 						</li>
+						<li class="collection-item">
+							<div id="chat-room" class="chat-box"><div id="no-messages-yet">No messages yet</div></div>
+						</li>
 					</ul>
-
 				</div>
 				<div class="col s12 m12 l4">
-					<ul class="collection with-header"><span class="new badge light-blue accent-4" id="whos-online-count">0</span>
-						<li class="collection-header"><h5>Participants</h5></li>
-						<span id="whos-online">
-							<div class="collection-item" id="chat-loading">Loading..</div>
-						</span>
+					<ul class="collection with-header">
+						<li class="collection-item">Who's online?
+							<span class="new badge light-blue accent-4" id="whos-online-count">0</span>
+						</li>
+						<li class="collection-item grey lighten-5">
+							<div id="whos-online"><span id="chat-loading">No one yet</span></div>
+						</li>
 					</ul>
 				</div>
 			</div>
