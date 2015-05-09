@@ -37,9 +37,6 @@
 		div.hr{
 			border-top: 1px solid #eeeeee;
 		}
-		#whos-online-count{
-			margin-top: 35px;
-		}
 		.brand-logo{
 			font-size: 24px !important;
 		}
@@ -49,6 +46,9 @@
 		h4{
 			margin-top: 2px;
 			margin-bottom: 30px;
+		}
+		.collection .collection-item{
+			background-color: transparent;
 		}
 	</style>
 	<title>Step 6</title>
@@ -65,14 +65,18 @@
 	<div class="section no-pad-bot" id="index-banner">
 		<div class="container">
 			<div class="row">
-				
-				<ul class="collection with-header"><span class="new badge light-blue accent-4" id="whos-online-count">0</span>
-					<li id="step" class="grey-text">Step 6</li>
-					<li class="collection-header"><h4>Who's online?</h4></li>
-					<span id="whos-online">
-						<li class="collection-item" id="chat-loading"><div>Loading..</div></li>
-					</span>
+
+				<div id="step" class="grey-text">Step 5</div>
+				<div class="collection-header"><h4>Who's online?</h4></div>
+				<ul class="collection">
+					<li class="collection-item">Number of users online
+						<span class="new badge light-blue accent-4" id="whos-online-count">0</span>
+					</li>
+					<li class="collection-item grey lighten-5">
+						<div id="whos-online"><span id="chat-loading">No one yet</span></div>
+					</li>
 				</ul>
+				<br>
 				<br>
 				<div class="center">
 					<a class="modal-trigger waves-effect waves-light btn-large light-blue accent-4 right" href="#modal-get-started">Next step</a>
