@@ -55,7 +55,8 @@ $.getJSON( "me.php?json=1", function( data ) {
 	window.me = data;
 });
 
-function submit_new_message(){
+function submit_new_message( event ){
+	event.preventDefault();
 	var message = $("#new-message").val();
 	if ( !message ){
 		return false;
@@ -76,11 +77,11 @@ function new_message( data ){
 	$("#no-messages-yet").remove();
 	var gravatar = get_gravatar( data.email, 40 );
 	var html = '';
-	html += '<div>';
+	html += '<div class="chat-sep"><div class="chat-image-container">';
 	html += '<img src="' + gravatar + '" class="circle" width="40" height="40">';
-	html += '<span class="chat-name black-text"><strong>' + data.full_name + ':&nbsp;</strong></span>';
+	html += '</div><div class="chat-message-container"><span class="chat-name black-text"><strong>' + data.full_name + ':&nbsp;</strong></span>';
 	html += '<span class="chat-message black-text">' + data.message + '</span>';
-	html += '</div><div class="clearfix"></div><br>';
+	html += '</div></div><div class="clearfix"></div><br>';
 	$("#chat-room").append(html);
 }
 
@@ -89,7 +90,7 @@ channel.bind('client-message', new_message);
 
 $(document).ready(function(){
 
-	$("#submit-new-message").on('click', submit_new_message);
+	$("#submit-new-message-form").on('submit', submit_new_message);
 	
 
 });
