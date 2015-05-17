@@ -37,7 +37,7 @@ function add_member( id, info ){
 		return false;
 	}
 	$("#chat-loading").remove();
-	var gravatar = get_gravatar( info.email, 40 )
+	var gravatar = get_gravatar( info.email, 40 );
 	var html = '';
 	html += '<li id="user-' + id + '" class="collection-item"><div class="valign-wrapper">';
 	html += '<img src="' + gravatar + '" class="circle" width="40" height="40">';
@@ -54,3 +54,13 @@ function remove_member( id, info ){
 $.getJSON( "me.php?json=1", function( data ) {
 	window.me = data;
 });
+
+$(document).ready(function(){
+
+	$("#submit-new-message-form").on('submit', submit_new_message);
+	
+});
+
+function submit_new_message(){
+	console.log(me);
+}
