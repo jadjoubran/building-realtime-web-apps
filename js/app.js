@@ -9,4 +9,4 @@ var channel = pusher.subscribe('presence-chat-room-dpc');
 
 
 
-/*You can use the #whos-online and #whos-online in your logic implementation*/
+/*Use the #whos-online, #whos-online-count and #no-one-online elements in your logic implementation*/
