@@ -1,6 +1,6 @@
 # Pusher PHP Library
 
-[![Build Status](https://travis-ci.org/pusher/pusher-php-server.svg)](https://travis-ci.org/pusher/pusher-php-server)
+[![Build Status](https://travis-ci.org/pusher/pusher-http-php.svg)](https://travis-ci.org/pusher/pusher-http-php)
 
 PHP library for interacting with the Pusher HTTP API.
 
@@ -270,6 +270,10 @@ Requires [phpunit](https://github.com/sebastianbergmann/phpunit/).
 * Got to the `tests` directory
 * Rename `config.example.php` and replace the values with valid Pusher credentials **or** create environment variables.
 * Execute `phpunit .` to run all the tests.
+
+## Framework Integrations
+- **Laravel 4** - https://github.com/artdarek/pusherer
+- **Laravel 5** - https://github.com/vinkla/pusher
     
 ## License
 
