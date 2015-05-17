@@ -61,7 +61,7 @@
 							<p>
 								Go back to <strong>App Keys</strong> and locate the link to <strong>pusher.min.js</strong>.<br>
 								Add a script tag that references Pusher's Javascript SDK.<br>
-								Also include the second script tag that appears right under the SDK so we can test the client side integration.
+								Also include the second script tag that appears right under the SDK (which includes your unique pusher key) so we can test the client side integration.
 							</p>
 						</div>
 					</li>
@@ -69,6 +69,7 @@
 						<div class="collapsible-header"><i class="mdi-navigation-check"></i>Testing Client Side Integration</div>
 						<div class="collapsible-body">
 							<p>
+								Start by <a href="javascript:window.location.reload();">refreshing</a> this page.<br>
 								Open the <strong>Debug Console</strong> and write the following in <strong>Create new Event</strong> section:<br>
 							</p>
 							<table class="bordered" width="100px" style="margin-left: 20px;">
