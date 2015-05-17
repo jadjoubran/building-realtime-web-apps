@@ -16,6 +16,13 @@ Requirements:
 
 php -S localhost:8200 and navigate to http://localhost:8200/
 
+## Info
+
+This tutorial contains 8 steps. Each step being in a different branch.
+
+Some dependencies are committed because internet connection is not stable at conferences.
+
+
 ## Dutch PHP Conference
 
 [Dutch PHP Conference - Building realtime web apps](http://www.phpconference.nl/building-realtime-web-apps)
