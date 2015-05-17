@@ -12,8 +12,12 @@ Requirements:
 + Composer (optional)
 
 
+## Get started
 
+php -S localhost:8200 and navigate to http://localhost:8200/
 
-[Dutch PHP Conference](http://www.phpconference.nl/building-realtime-web-apps)
+## Dutch PHP Conference
+
+[Dutch PHP Conference - Building realtime web apps](http://www.phpconference.nl/building-realtime-web-apps)
 
 Author: [Jad Joubran](http://www.phpconference.nl/jad-joubran)
