@@ -29,7 +29,7 @@ channel.bind('pusher:member_removed', function(member) {
 
 
 function update_member_count( count ){
-	$("#whos-online-count").val( count );
+	$("#whos-online-count").html( count );
 }
 
 function add_member( id, info ){
