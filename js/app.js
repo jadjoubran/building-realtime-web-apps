@@ -64,4 +64,8 @@ $(document).ready(function(){
 function submit_new_message( event ){
 	event.preventDefault();
 	console.log(me);
+	//send messages using the client-message event
+	//data that you'll send
+	//message: message
+	//full_name: me.full_name
 }
