@@ -59,9 +59,8 @@
 						<div class="collapsible-header"><i class="mdi-hardware-desktop-windows"></i>Pusher Javascript SDK</div>
 						<div class="collapsible-body">
 							<p>
-								Go back to <strong>App Keys</strong> and locate the link to <strong>pusher.min.js</strong>.<br>
-								Add a script tag that references Pusher's Javascript SDK.<br>
-								Also include the second script tag that appears right under the SDK (which includes your unique pusher key) so we can test the client side integration.
+								Go back to <strong>App Keys</strong> and copy the link to <strong>pusher.min.js</strong> to your <strong>index.html</strong> file and place it at the end of the body tag.<br>
+								Also copy the second script tag that appears right under the SDK (which includes your unique pusher key) and paste it underneath the previous script so we can test the client side integration.
 							</p>
 						</div>
 					</li>
@@ -70,7 +69,7 @@
 						<div class="collapsible-body">
 							<p>
 								Start by <a href="javascript:window.location.reload();">refreshing</a> this page.<br>
-								Open the <strong>Debug Console</strong> and write the following in <strong>Create new Event</strong> section:<br>
+								Go back to Pusher and open the <strong>Debug Console</strong> and write the following in <strong>Create new Event</strong> section:<br>
 							</p>
 							<table class="bordered" width="100px" style="margin-left: 20px;">
 								<tr>
@@ -133,7 +132,5 @@
 	});
 </script>
 
-<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </body>
 </html>
