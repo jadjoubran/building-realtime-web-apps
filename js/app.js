@@ -51,7 +51,7 @@ function remove_member( id, info ){
 }
 
 /*Get user's properties (for the sake of this tutorial only)*/
-$.getJSON( "me.php?json=1", function( data ) {
+$.getJSON( "json_me.php", function( data ) {
 	window.me = data;
 });
 
