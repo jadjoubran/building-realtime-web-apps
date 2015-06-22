@@ -89,7 +89,7 @@ function new_message( data ){
 	html += '</div><div class="chat-message-container"><span class="chat-name black-text"><strong>' + data.full_name + ':&nbsp;</strong></span>';
 	html += '<span class="chat-message black-text">' + data.message + '</span>';
 	html += '</div></div><div class="clearfix"></div><br>';
-	$("#chat-room").append(html);
+	$("#chat-room").prepend(html);
 }
 
 
