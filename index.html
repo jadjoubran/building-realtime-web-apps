@@ -151,13 +151,9 @@
 
 		<div id="modal-get-started" class="modal">
 			<div class="modal-content">
-				<h4>Proceed to step 9</h4>
+				<h4>Just kidding, we're done for today!</h4>
 				<p class="flow-text">
-					<blockquote class="flow-text">
-						git add -A<br>
-						git commit -m "describe your changes"<br>
-						git checkout step9
-					</blockquote>
+					Thank you!
 				</p>
 			</p>
 		</div>
@@ -174,10 +170,7 @@
 	<script>
 		$(document).ready(function(){
 			$('.modal-trigger').leanModal({
-				in_duration: 150,
-				complete: function(){
-					window.location.reload();
-				}
+				in_duration: 150
 			});
 		});
 	</script>
