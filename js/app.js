@@ -37,7 +37,11 @@ function add_member( id, info ){
 		return false;
 	}
 	$("#chat-loading").remove();
-	var gravatar = get_gravatar( info.email, 40 );
+	var gravatar = '';
+	console.log(info);
+	if ( info.email ){
+		gravatar = get_gravatar( info.email, 40 );
+	}
 	var html = '';
 	html += '<li id="user-' + id + '" class="collection-item"><div class="valign-wrapper">';
 	html += '<img src="' + gravatar + '" class="circle" width="40" height="40">';
@@ -51,7 +55,7 @@ function remove_member( id, info ){
 }
 
 /*Get user's properties (for the sake of this tutorial only)*/
-$.getJSON( "me.php?json=1", function( data ) {
+$.getJSON( "json_me.php", function( data ) {
 	window.me = data;
 });
 
@@ -75,7 +79,10 @@ function submit_new_message( event ){
 
 function new_message( data ){
 	$("#no-messages-yet").remove();
-	var gravatar = get_gravatar( data.email, 40 );
+	var gravatar = '';
+	if ( data.email ){
+		gravatar = get_gravatar( data.email, 40 );
+	}
 	var html = '';
 	html += '<div class="chat-sep"><div class="chat-image-container">';
 	html += '<img src="' + gravatar + '" class="circle" width="40" height="40">';
