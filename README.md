@@ -23,7 +23,7 @@ This tutorial contains 8 steps. Each step being in a different branch.
 Some dependencies are committed because internet connection is not reliable at conferences.
 
 
-## Presented at:
+## Presented at
 
 [Dutch PHP Conference 2015](http://www.phpconference.nl/building-realtime-web-apps)
 
