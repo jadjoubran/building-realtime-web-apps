@@ -14,7 +14,7 @@ Requirements:
 
 ## Get started
 
-php -S localhost:8200 and navigate to http://localhost:8200/
+`php -S localhost:8200` and navigate to http://localhost:8200/
 
 ## Info
 
