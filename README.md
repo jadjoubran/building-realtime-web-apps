@@ -20,11 +20,13 @@ php -S localhost:8200 and navigate to http://localhost:8200/
 
 This tutorial contains 8 steps. Each step being in a different branch.
 
-Some dependencies are committed because internet connection is not stable at conferences.
+Some dependencies are committed because internet connection is not reliable at conferences.
 
 
-## Dutch PHP Conference
+## Presented at:
 
-[Dutch PHP Conference - Building realtime web apps](http://www.phpconference.nl/building-realtime-web-apps)
+[Dutch PHP Conference 2015](http://www.phpconference.nl/building-realtime-web-apps)
+
+[BDL Accelerate 2015](http://2015.bdlaccelerate.com/)
 
 Author: [Jad Joubran](http://www.phpconference.nl/jad-joubran)
